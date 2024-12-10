@@ -1,0 +1,13 @@
+services:
+  translator:
+    build:
+      context: .  # Specifies the current directory for building the Docker image
+    container_name: translation-service
+    ports:
+      - "${PORT:-8000}:${PORT:-8000}"  # Maps the port dynamically based on .env or defaults to 8000
+    environment:
+      - HOST=${HOST:-0.0.0.0}
+      - PORT=${PORT:-8000}
+    restart: unless-stopped  # Restarts the service on failure
+    volumes:
+      - ./models_storage:/app/models_storage  # Persist models between container restarts

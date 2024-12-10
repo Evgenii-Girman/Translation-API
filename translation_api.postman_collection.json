@@ -1,0 +1,48 @@
+{
+    "info": {
+      "name": "Translation API",
+      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+      {
+        "name": "Translate Text",
+        "request": {
+          "method": "POST",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": {
+            "mode": "raw",
+            "raw": "{\n  \"text\": \"Hello, world!\",\n  \"from_lang\": \"en\",\n  \"to_lang\": \"fr\"\n}"
+          },
+          "url": {
+            "raw": "http://127.0.0.1:8000/translate",
+            "protocol": "http",
+            "host": ["127.0.0.1"],
+            "port": "8000",
+            "path": ["translate"]
+          }
+        },
+        "response": []
+      },
+      {
+        "name": "Get Supported Languages",
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": {
+            "raw": "http://127.0.0.1:8000/supported-languages",
+            "protocol": "http",
+            "host": ["127.0.0.1"],
+            "port": "8000",
+            "path": ["supported-languages"]
+          }
+        },
+        "response": []
+      }
+    ]
+  }
+  

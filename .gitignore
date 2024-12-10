@@ -1,0 +1,64 @@
+# Byte-compiled files
+__pycache__/
+*.py[cod]
+
+# Distribution / packaging
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+*.egg
+*.egg-info/
+dist/
+build/
+*.pyc
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# VSCode settings
+.vscode/
+
+# PyCharm settings
+.idea/
+
+# macOS specific
+.DS_Store
+
+# dotenv files
+*.env
+
+# Logs and database files
+*.log
+*.sqlite3
+*.db
+
+# Virtual environments
+*.env/
+*.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Coverage reports
+htmlcov/
+.coverage
+*.cover
+*.py,cover
+.cache
+
+# Test output
+.tox/
+.nox/
+*.coverage
+*.test_cache/
+
+# Temporary files
+*.tmp
+*.swp
+*.swo
+
+# Static files
+models_storage/
+logs/
